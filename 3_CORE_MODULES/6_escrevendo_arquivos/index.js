@@ -21,9 +21,6 @@ const server = http.createServer((req, res) => {
             return res.end()
         })
     }
-
-    
-    
 })
 
 server.listen(port, () => {
