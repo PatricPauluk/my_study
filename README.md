@@ -1,2 +1,2 @@
 # node_pratice
-Just praticing node.js.
+Node.js do Zero a Maestria.
