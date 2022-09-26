@@ -1,5 +1,7 @@
 const express = require('express') // yarn add express
 
+// yarn ou yarn install instala dependencias
+
 // Exemplos:
 // query params = localhost:3000/curso?nome=Javascript
 // route params = localhost:3000/cursos/1
