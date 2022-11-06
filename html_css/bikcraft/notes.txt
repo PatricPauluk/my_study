@@ -1,0 +1,4 @@
+Bikcraft foi a minha primeira experiência completa que tive com desenvolvimento web do zero, desde wireframe, a protótipo até site.
+Tenho um carinho enorme por este projeto, pois foi o que mais me motivou a seguir minha carreira de desenvolvedor web.
+
+Realizado no curso da Origamid de Web Design Completo.
