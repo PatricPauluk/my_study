@@ -11,18 +11,31 @@
   -->
   <!-- --------------- Importação Bootstrap --------------- -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/better-tema.css" rel="stylesheet">
 </head>
 <body>
   <!-- --------------- Header --------------- -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container"> <!-- alinha os elementos horizontalmente -->
+      <a class="navbar-brand" href="#">Better</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"> <!-- botão mobile do menu -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- oculta/exibe o menu com o botão mobile -->
         <ul class="navbar-nav mr-auto"> <!-- opções do menu -->
-          <li><a class="nav-link" href="#">Better</a></li>
-          <li><a class="nav-link" href="#">Descubra</a></li>
+          <li class="dropdown"> <!-- menu dropdown -->
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Descubra</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Paisagem</a></li>
+              <li><a href="#" class="dropdown-item">Tecnologia</a></li>
+              <li><a href="#" class="dropdown-item">Abstrato</a></li>
+              <li><a href="#" class="dropdown-item">Animais</a></li>
+              <li><a href="#" class="dropdown-item">Comida</a></li>
+              <li><a href="#" class="dropdown-item">Pessoas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a href="#" class="dropdown-item">Algo mais</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link" href="#">Preços</a></li>
           <li><a class="nav-link" href="#">Cadastre-se</a></li>
           <li><a class="nav-link" href="#">Login</a></li>
@@ -30,6 +43,79 @@
       </div>
     </div>
   </nav>
+
+  <!-- --------------- Main --------------- -->
+  <main > <!-- background do destaque main -->
+
+    <!-- --------------- Conteúdo destaque jumbotron --------------- -->
+    <section class="p-5 mb-4 bg-light custom-jumbotron">
+      <div class="container"> <!-- container pra centralizar apenas o conteúdo do main -->
+        <h1>Momentos perfeitos</h1>
+        <p>Um subtítulo simples</p>
+        <form class="input-group"> <!-- input-group deixou elementos na mesma linha -->
+          <input class="form-control" placeholder="Encontre o que você procura..." type="search">
+          <span class="input-group-btn"> <!-- input-group-btn funciona junto com input-group -->
+            <button class="btn btn-primary">Pesquisar</button>
+          </span>
+        </form>
+      </div>
+    </section>
+
+    <!-- --------------- Imagens bonitas, lindas e perfeitas --------------- -->
+    <section class="container">
+      <h2 class="text-center">Imagens bonitas, lindas e perfeitas</h2>
+      <p class="text-center">Não ligue para mim, sou um parágrafo</p>
+      <a href="#">
+        <figure>
+          <img src="img/girassois.jpg" alt="Girassóis no campo">
+          <figcaption>
+            Girassóis
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="img/garota-silhueta.jpg" alt="Silhueta garota">
+          <figcaption>
+            Silhueta garota
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="img/mesa-designer.jpg" alt="Típica mesa de um designer">
+          <figcaption>
+            Mesa de designer
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="img/pipoca.jpg" alt="Pipoca">
+          <figcaption>
+            Pipoca
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="img/garota-feliz.jpg" alt="Mulher feliz">
+          <figcaption>
+            Mulher feliz
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+          <img src="img/sunset.jpg" alt="Pôr do sol">
+          <figcaption>
+            Pôr do sol
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+  </main>
+
   <!-- --------------- Importação Bootstrap --------------- -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
@@ -41,32 +127,68 @@ Qualquer dúvida, consultar o livro para mais detalhes.
 As observações das classes também se referem a classes relacionadas.
 
 
+
 Classes navbar:
 • Inserida em: menus (headers);
-• As classes "nav" (navbar, nav-link, etc) são para a criação do header; (Pag. 10)
+• As classes "nav" (navbar, nav-link, etc) são para a criação do header.
 
 
 Classes container:
 • Inserida em: relativo;
-• A classe "container" centraliza os elementos dentro dela horizontalmente. (Pag. 12)
-• A classe "container-fluid" faz o mesmo que "container", mas centraliza 100% da tela. (Pag. 13)
+• A classe "container" centraliza os elementos dentro dela horizontalmente.
+• A classe "container-fluid" faz o mesmo que "container", mas centraliza 100% da tela.
 
 
 Classes colapse:
 • Inserido em: normalmente para mobile/responsivo;
-• "collapse" faz com que o menu fique fechado no mobile (ou colapsado, em linguagem técnica). (Pag. 16)
+• "collapse" faz com que o menu fique fechado no mobile (ou colapsado, em linguagem técnica).
+
+
+Classes dropdown:
+• Inserida em: menus (headers);
+• Utilizadas no menu dropdown.
 
 
 
 --------------- Classes mais específicas ---------------
 
 
+
 .navbar-toggler:
-• Inserida no botão do menu no header. O botão é exibido apenas no mobile. (Pag. 18)
+• Inserida no botão do menu no header. O botão é exibido apenas no mobile.
+
+
+.navbar-brand:
+• Inserido na logo do header.
+
+
+.jumbotron:
+• Inserido no main. Classe antiga que não existe mais, mas um jumbotron pode ser construído
+de forma adequada olhando a documentação do bootstrap. Neste caso aqui eu criei um personalizado 
+conforme a orientação do curso (custom-jumbotron).
+
+Jumbotron feito a mão:
+.custom-jumbotron	{
+  padding: 2rem 1rem !important;
+  margin-bottom: 2rem !important;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  background-image: url(../img/vitrine.jpg);
+}
+
+A princípio era pra ser como acima, mas substituí ele pelas classes recomendadas atualmente no
+Bootstrap 5 (p-5 mb-4 bg-light rounded-3), que estou utilizando.
+Link: https://getbootstrap.com/docs/5.2/examples/jumbotron/
+
+
+.text-center:
+• Usado para centralizar alguns títulos e subtítulos.
+Da mesma forma que poderia usar text-justify, text-align, etc...
 
 
 
 --------------- Notas gerais ---------------
+
 
 
 Atributos toggle:
@@ -74,6 +196,9 @@ No livro esta como "data-toggle" e "data-target", que é antigo.
 No botão do menu é inserido "data-bs-toggle" e "data-bs-target".
 Comportamentos de liga e desliga classes são atributos customizados, chamados "toogle". (Pag. 20)
 Em "data-bs-target" que é o atributo alvo, é recomendado colocar um seletor de ID. (#navbarSupportedContent no nav)
+
+Dentro do better-tema.css:
+O "!important" é adicionado para sobrepor configurações do bootstrap
 
 
 -->
