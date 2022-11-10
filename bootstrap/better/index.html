@@ -44,9 +44,7 @@
     </div>
   </nav>
 
-  <!-- --------------- Main --------------- -->
-  <main > <!-- background do destaque main -->
-
+  <main>
     <!-- --------------- Conteúdo destaque jumbotron --------------- -->
     <section class="p-5 mb-4 bg-light custom-jumbotron">
       <div class="container"> <!-- container pra centralizar apenas o conteúdo do main -->
@@ -65,67 +63,104 @@
     <section class="container">
       <h2 class="text-center">Imagens bonitas, lindas e perfeitas</h2>
       <p class="text-center">Não ligue para mim, sou um parágrafo</p>
-      <a href="#">
+      <div class="row">
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/girassois.jpg" alt="Girassóis no campo">
+            <figcaption>
+              Girassóis
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/garota-silhueta.jpg" alt="Silhueta garota">
+            <figcaption>
+              Silhueta garota
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/mesa-designer.jpg" alt="Típica mesa de um designer">
+          <figcaption>
+            Mesa de designer
+          </figcaption>
+        </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/pipoca.jpg" alt="Pipoca">
+            <figcaption>
+              Pipoca
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/garota-feliz.jpg" alt="Mulher feliz">
+            <figcaption>
+              Mulher feliz
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/sunset.jpg" alt="Pôr do sol">
+            <figcaption>
+              Pôr do sol
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/ciclista.jpg" alt="Ciclista">
+            <figcaption>
+              Ciclista
+            </figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-md-4 col-lg-3" href="#">
+          <figure>
+            <img class="img-fluid img-thumbnail" src="img/cabra.jpg" alt="Cabrinha">
+            <figcaption>
+              Cabrinha
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <!-- --------------- Hall da Fama --------------- -->
+    <section class="hall">
+      <div class="container">
+        <h1>Hall da fama do mês de janeiro</h1>
+        <p>
+          Por	votação	do	público	e	número	de	downloads,
+          escolhemos	todo	mês	as	fotografias	mais	baixadas
+          do	mês	anterior	e	disponibilizamos	de	graça.	
+        </p>
+        <button class="btn btn-primary btn-lg">Quero votar!</button>
         <figure>
           <img src="img/girassois.jpg" alt="Girassóis no campo">
           <figcaption>
             Girassóis
           </figcaption>
         </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="img/garota-silhueta.jpg" alt="Silhueta garota">
-          <figcaption>
-            Silhueta garota
-          </figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="img/mesa-designer.jpg" alt="Típica mesa de um designer">
-          <figcaption>
-            Mesa de designer
-          </figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="img/pipoca.jpg" alt="Pipoca">
-          <figcaption>
-            Pipoca
-          </figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="img/garota-feliz.jpg" alt="Mulher feliz">
-          <figcaption>
-            Mulher feliz
-          </figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="img/sunset.jpg" alt="Pôr do sol">
-          <figcaption>
-            Pôr do sol
-          </figcaption>
-        </figure>
-      </a>
+      </div>
     </section>
   </main>
-
+  
   <!-- --------------- Importação Bootstrap --------------- -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 <!-- --------------- Observações importantes --------------- 
-
-Qualquer dúvida, consultar o livro para mais detalhes.
-As observações das classes também se referem a classes relacionadas.
-
+  
+  Qualquer dúvida, consultar o livro para mais detalhes.
+  As observações das classes também se referem a classes relacionadas.
+  
 
 
 Classes navbar:
@@ -186,6 +221,18 @@ Link: https://getbootstrap.com/docs/5.2/examples/jumbotron/
 Da mesma forma que poderia usar text-justify, text-align, etc...
 
 
+.img-fluid:
+• Adapta a imagem conforme o tamanho da tela.
+
+
+.img-thumbnail:
+• Coloca a borda de uma thumbnail em uma imagem.
+
+
+.btn-lg:
+• Deixa o botão maior.
+
+
 
 --------------- Notas gerais ---------------
 
@@ -199,6 +246,9 @@ Em "data-bs-target" que é o atributo alvo, é recomendado colocar um seletor de
 
 Dentro do better-tema.css:
 O "!important" é adicionado para sobrepor configurações do bootstrap
+
+Linhas e colunas:
+Todas as .col devem ficar dentro de uma .row, pois é a .row que permite uma .col se ajustar.
 
 
 -->

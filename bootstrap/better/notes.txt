@@ -3,4 +3,4 @@ Apesar do livro do projeto ser Bootstrap 4, o projeto foi realizado com bootstra
 
 Livro da Casa do Código: Bootstrap 4 - Conheça a biblioteca front-end mais utilizada do mundo.
 
-Página atual PDF: 80.
+Página atual PDF: 103.
