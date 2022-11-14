@@ -41,7 +41,7 @@
           <li><a class="nav-link" href="#">Login</a></li>
         </ul>
       </div>
-    </div>
+    </div> <!-- fim .container -->
   </nav>
 
   <main>
@@ -56,7 +56,7 @@
             <button class="btn btn-primary">Pesquisar</button>
           </span>
         </form>
-      </div>
+      </div> <!-- fim .container -->
     </section>
 
     <!-- --------------- Imagens bonitas, lindas e perfeitas --------------- -->
@@ -132,22 +132,138 @@
     </section>
 
     <!-- --------------- Hall da Fama --------------- -->
-    <section class="hall">
+    <section class="hall bg-dark text-light pt-4">
       <div class="container">
-        <h1>Hall da fama do mês de janeiro</h1>
-        <p>
-          Por	votação	do	público	e	número	de	downloads,
-          escolhemos	todo	mês	as	fotografias	mais	baixadas
-          do	mês	anterior	e	disponibilizamos	de	graça.	
-        </p>
-        <button class="btn btn-primary btn-lg">Quero votar!</button>
-        <figure>
-          <img src="img/girassois.jpg" alt="Girassóis no campo">
-          <figcaption>
-            Girassóis
-          </figcaption>
-        </figure>
-      </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <h1>Hall da fama do mês de janeiro</h1>
+            <p>
+              Por	votação	do	público	e	número	de	downloads,
+              escolhemos	todo	mês	as	fotografias	mais	baixadas
+              do	mês	anterior	e	disponibilizamos	de	graça.	
+            </p>
+            <button class="btn btn-primary btn-lg">Quero votar!</button>
+          </div>
+          <figure class="col-lg-6 mt-4">
+            <img class="img-fluid img-thumbnail" src="img/girassois.jpg" alt="Girassóis no campo">
+            <figcaption>
+              Girassóis
+            </figcaption>
+          </figure>
+        </div> <!-- fim .row -->
+      </div> <!-- fim .container -->
+    </section>
+
+    <!-- --------------- Reviews --------------- -->
+    <section class="container reviews pt-5">
+      <h1 class="mb-3">Reviews</h1>
+      <div class="row">
+        <div class="d-flex align-items-center col-md-6">
+          <div class="flex-shrink-0">
+            <img src="https://dummyimage.com/64x64/a6a6a6/000" alt="Roberto Ford">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h2 class="h5">Roberto Ford</h2>
+            <p>
+              Lorem	ipsum	dolor	sit	amet,	consectetur	adipisicing	elit.	Nes
+              ciunt,	dolore,	consequatur?	Sint	odit	ad	impedit	harum	animi!	Fac
+              ilis	quibusdam	quod	velit	veniam	corporis	quasi,	quas	praesentium
+              ad	accusantium	quaerat	consequuntur.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center col-md-6">
+          <div class="flex-shrink-0">
+            <img src="https://dummyimage.com/64x64/a6a6a6/000" alt="Roberto Ford">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h2 class="h5">Roberto Ford</h2>
+            <p>
+              Lorem	ipsum	dolor	sit	amet,	consectetur	adipisicing	elit.	Nes
+              ciunt,	dolore,	consequatur?	Sint	odit	ad	impedit	harum	animi!	Fac
+              ilis	quibusdam	quod	velit	veniam	corporis	quasi,	quas	praesentium
+              ad	accusantium	quaerat	consequuntur.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center col-md-6">
+          <div class="flex-shrink-0">
+            <img src="https://dummyimage.com/64x64/a6a6a6/000" alt="Roberto Ford">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h2 class="h5">Roberto Ford</h2>
+            <p>
+              Lorem	ipsum	dolor	sit	amet,	consectetur	adipisicing	elit.	Nes
+              ciunt,	dolore,	consequatur?	Sint	odit	ad	impedit	harum	animi!	Fac
+              ilis	quibusdam	quod	velit	veniam	corporis	quasi,	quas	praesentium
+              ad	accusantium	quaerat	consequuntur.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center col-md-6">
+          <div class="flex-shrink-0">
+            <img src="https://dummyimage.com/64x64/a6a6a6/000" alt="Roberto Ford">
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <h2 class="h5">Roberto Ford</h2>
+            <p>
+              Lorem	ipsum	dolor	sit	amet,	consectetur	adipisicing	elit.	Nes
+              ciunt,	dolore,	consequatur?	Sint	odit	ad	impedit	harum	animi!	Fac
+              ilis	quibusdam	quod	velit	veniam	corporis	quasi,	quas	praesentium
+              ad	accusantium	quaerat	consequuntur.
+            </p>
+          </div>
+        </div>
+      </div> <!-- fim .row -->
+    </section>
+
+    <!-- --------------- Planos --------------- -->
+    <section class="container planos">
+      <h1>Planos para todos os bolsos</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <h2 class="card-header text-uppercase">Silver</h2>
+            <div class="card-body">          
+              <p>R$19,90</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">150 Fotos</li>
+                <li class="list-group-item">3 Adesivos</li>
+                <li class="list-group-item">1 Camiseta</li>
+              </ul>
+              <button class="btn btn-primary btn-lg">Quero este!</button>
+            </div>
+          </div> <!-- fim .card Silver -->
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <h2 class="card-header text-uppercase bg-primary text-light">Crystal</h2>
+            <div class="card-body">          
+              <p>R$29,90</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">300 Fotos</li>
+                <li class="list-group-item">10 Adesivos</li>
+                <li class="list-group-item">5 Camiseta</li>
+              </ul>
+              <button class="btn btn-primary btn-lg">Quero este!</button>
+            </div>
+          </div><!-- fim .card Crystal -->
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <h2 class="card-header text-uppercase">Gold</h2>
+            <div class="card-body">          
+              <p>R$49,90</p>
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">600 Fotos</li>
+                <li class="list-group-item">20 Adesivos</li>
+                <li class="list-group-item">10 Camiseta</li>
+              </ul>
+              <button class="btn btn-primary btn-lg">Quero este!</button>
+            </div>
+          </div> <!-- fim .card Gold -->
+        </div>
+      </div> <!-- fim .row -->
     </section>
   </main>
   
@@ -186,7 +302,6 @@ Classes dropdown:
 
 
 --------------- Classes mais específicas ---------------
-
 
 
 .navbar-toggler:
@@ -233,9 +348,22 @@ Da mesma forma que poderia usar text-justify, text-align, etc...
 • Deixa o botão maior.
 
 
+.d-flex:
+• Ativa o flexbox em uma tag, para trabalhar com alinhamentos, etc.
+• A propósito, media object de Bootstrap 4 mudou para d-flex.
+
+
+.card:
+• Junta os componentes como se fosse um "cartão", e da pra tratar os itens de forma melhor
+com classes relacionadas como .card-body, card-header, etc...
+
+
+.list-group:
+• Ideal para fazer uma lista no Bootstrap.
+• Podem ser removidas as bordas com .list-group-flush.
+
 
 --------------- Notas gerais ---------------
-
 
 
 Atributos toggle:
@@ -250,5 +378,9 @@ O "!important" é adicionado para sobrepor configurações do bootstrap
 Linhas e colunas:
 Todas as .col devem ficar dentro de uma .row, pois é a .row que permite uma .col se ajustar.
 
+https://dummyimage.com/
+Site que gera imagens de vários tamanhos MUITO FODA!
+Exemplo:
+https://dummyimage.com/64x64/000000/fff
 
 -->
