@@ -1,0 +1,38 @@
+/* Customizar o jumbotron (nome antigo do BS4) */
+.custom-jumbotron	{
+  background-image: url(../img/vitrine.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+
+/* Icones de redes sociais */
+.social	a[href='http://facebook.com/betterimages']	{
+  background:	url(../img/icone-face.png);
+  background-size:	36px	36px
+}
+.social	a[href='http://twitter.com/betterimages']	{
+  background:	url(../img/icone-twitter.png);
+  background-size:	36px	36px
+}
+.social	a[href='http://instagram.com/betterimages']	{
+  background:	url(../img/icone-insta.png);
+  background-size:	36px	36px
+}
+
+
+/* Permite que as tags das redes tenham um tamanho e que fiquem uma ao lado da outra.
+Resumindo: Permite que os icones sejam vistos. */
+.social a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+}
+
+/* Alinha os icones das redes sociais. */
+.social li {
+  display: inline-block;
+  margin-left: 1em;
+}
