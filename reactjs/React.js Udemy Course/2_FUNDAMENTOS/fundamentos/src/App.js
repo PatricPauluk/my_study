@@ -1,6 +1,7 @@
 // Components
 import FirstComponent from './components/FirstComponent'; // a extensão .js é omitida (em React)
 import TemplateExpressions from './components/TemplateExpressions';
+import MyComponent from './components/MyComponent';
 
 // Styles / CSS
 import './App.css';
@@ -12,6 +13,7 @@ function App() {
       <h1>Olá</h1>
       <FirstComponent />
       <TemplateExpressions />
+      <MyComponent />
     </div>
   );
 }
