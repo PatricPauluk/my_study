@@ -1,5 +1,6 @@
 // Components
 import FirstComponent from './components/FirstComponent'; // a extensão .js é omitida (em React)
+import TemplateExpressions from './components/TemplateExpressions';
 
 // Styles / CSS
 import './App.css';
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <h1>Olá</h1>
       <FirstComponent />
+      <TemplateExpressions />
     </div>
   );
 }

@@ -1,4 +1,14 @@
 O conteúdo dentro da div inicial (em src/App.js) normalmente é apagado antes de iniciar o projeto.
 
 Foi criado uma pasta em src/components. Todos os componentes com a lógica e o template são inseridos nela.
-Criado um componente em FirstComponent.js 
+Criado um componente em FirstComponent.js
+
+----------------------------------------------------------------------------------------------------
+
+Explicação de JSX (HTML do React):
+O código "HTML" em React.js é chamado de JSX. Basicamente ele é o HTML do React e ficam dentro do return do componente.
+Nele temos algumas diferenças, por exemplo, atributos de classes no HTML são declarados dentro de class,
+mas em React é reclarado dentro de className, assim evitam conflitos de JSX com HTML. Exemplo:
+<h1 className="teste">Meu primeiro componente</h1>
+
+Apesar da nomenclatura diferente, funciona normalmente no HTML do browser.
