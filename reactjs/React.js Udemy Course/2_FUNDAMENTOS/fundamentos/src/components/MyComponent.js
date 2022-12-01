@@ -1,5 +1,4 @@
 // Componentes podem ser chamados dentro de outros componentes
-
 const MyComponent = () => {
   return (
     <div>
