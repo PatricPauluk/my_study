@@ -1,0 +1,4 @@
+O conteúdo dentro da div inicial (em src/App.js) normalmente é apagado antes de iniciar o projeto.
+
+Foi criado uma pasta em src/components. Todos os componentes com a lógica e o template são inseridos nela.
+Criado um componente em FirstComponent.js 
