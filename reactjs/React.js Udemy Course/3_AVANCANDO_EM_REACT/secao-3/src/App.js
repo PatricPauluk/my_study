@@ -8,11 +8,13 @@ function App() {
   return (
     <div className="App">
       <h1>Avançando em React</h1>
+      
       {/* Imagem em public */}
       <div>
         {/* A pasta public é linkada com a pasta src, então podem ser chamadas diretamente na tag. */}
         <img id="imagem" src="/img1.jpg" alt="Imagem de public" />
       </div>
+
       {/* Imagem em Assets */}
       <div>
         {/* A pasta assets NÃO É é linkada com a pasta src, então é importada. */}
