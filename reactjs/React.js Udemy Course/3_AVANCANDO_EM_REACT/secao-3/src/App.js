@@ -1,6 +1,7 @@
 import './App.css';
 
 import Asset from "./assets/img2.jpg";
+import ManageData from './components/ManageData';
 
 // As imagens do projeto podem ficar ou na pasta public, ou na pasta src/assets.
 
@@ -20,6 +21,8 @@ function App() {
         {/* A pasta assets NÃO É é linkada com a pasta src, então é importada. */}
         <img id="imagem" src={Asset} alt="Imagem de assets" />
       </div>
+
+      <ManageData/>
     </div>
   );
 }
