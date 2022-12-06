@@ -14,6 +14,8 @@ const ManageData = () => {
   
   Esta declaração funciona corretamente, mas fiz de outra forma pra me organizar:
   <button onClick={() => setNumber(25)}>Botão com useState</button>
+
+  O number inicia com 15, mas pode ser alterado para qualquer valor em setNumber.
   */
   const [number, setNumber] = useState(15);
 
@@ -24,7 +26,7 @@ const ManageData = () => {
 
   return (
     <div>
-      <h1>Testando React Hooks</h1>
+      <h2>ManageData</h2>
       <div>
         <p>someData = {someData}</p>
         <button onClick={wrongButton}>Botão sem useState</button>
