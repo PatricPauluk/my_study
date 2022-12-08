@@ -11,6 +11,7 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
 
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
     { id: 2, brand: "KIA", color: "Marrom", used: false, km: 213 },
     { id: 3, brand: "Renault", color: "Preto", used: false, km: 4313 },
   ];
+
+  // Função para passar no props
+  function showMessage() {
+    alert("Oi, sou uma função no props!")
+  }
 
   return (
     <div className="App">
@@ -61,6 +67,7 @@ function App() {
       <p>Lista em loop</p>
       {cars.map(car => (
         <CarDetails
+          key={car.id}
           brand={car.brand}
           km={car.km}
           color={car.color}
@@ -75,6 +82,9 @@ function App() {
       <Container testValue={12}>
         <p>Children aqui</p>
       </Container>
+
+      {/* Funções no props */}
+      <ExecuteFunction myFunction={showMessage} />
     </div>
   );
 }
