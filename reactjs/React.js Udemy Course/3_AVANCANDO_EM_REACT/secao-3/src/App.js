@@ -1,6 +1,7 @@
 import './App.css';
 
 import Asset from "./assets/img2.jpg";
+import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 
@@ -24,8 +25,9 @@ function App() {
       </div>
 
       <h1>Iniciando com Hooks</h1>
-      <ManageData/>
-      <ListRender/>
+      <ManageData />
+      <ListRender />
+      <ConditionalRender />
     </div>
   );
 }
