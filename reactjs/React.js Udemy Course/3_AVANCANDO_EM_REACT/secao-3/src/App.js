@@ -2,8 +2,9 @@ import { useState } from 'react';
 import './App.css';
 
 // As imagens do projeto podem ficar ou na pasta public, ou na pasta src/assets.
-import Asset from "./assets/img2.jpg";
+// import Asset from "./assets/img2.jpg";
 
+import Fragment from './components/Fragment';
 import CarDetails from './components/CarDetails';
 import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
@@ -65,6 +66,9 @@ function App() {
           used={car.used}
         />
       ))}
+
+      {/* React fragments para quando é necessário ter mais de um elemento pai em um componente */}
+      <Fragment />
     </div>
   );
 }
