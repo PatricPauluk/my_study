@@ -3,6 +3,7 @@
 const Fragment = () => {
   return (
     <>
+      <h2>Fragment</h2>
       <h3>Titulo 1</h3>
       <h4>Titulo 2</h4>
     </>
