@@ -41,7 +41,10 @@ function App() {
       <ShowUserName name="Patric" age={27} like={like} profession={profession}  />
 
       {/* Destructuring em props (forma mais indicada para trabalhar com props) */}
-      <CarDetails brand="BMW" km={100000} color="Azul" />
+      <h2>CarDetails (destructuring)</h2>
+      <CarDetails brand="BMW" km={100000} color="Azul" used={true}/>
+      <CarDetails brand="HB20" km={200000} color="Branco" used={false}/>
+      <CarDetails brand="Monza" km={300000} color="Cinza" used={true}/>
     </div>
   );
 }
