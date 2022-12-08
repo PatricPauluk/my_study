@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 import Asset from "./assets/img2.jpg";
+import CarDetails from './components/CarDetails';
 import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
@@ -38,6 +39,9 @@ function App() {
 
       {/* ShowUserName tem acesso a várias props (propriedades passadas na tag) */}
       <ShowUserName name="Patric" age={27} like={like} profession={profession}  />
+
+      {/* Destructuring em props (forma mais indicada para trabalhar com props) */}
+      <CarDetails brand="BMW" km={100000} color="Azul" />
     </div>
   );
 }
