@@ -14,6 +14,7 @@ import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 
 function App() {
@@ -28,6 +29,14 @@ function App() {
     { id: 2, brand: "KIA", color: "Marrom", used: false, km: 213 },
     { id: 3, brand: "Renault", color: "Preto", used: false, km: 4313 },
   ];
+
+  // Array de pessoas para o exercício
+  const users = [
+    { id: 0, name: "Patric", age: 27, profession: "Programmer" },
+    { id: 1, name: "João", age: 28, profession: "Infrastructure" },
+    { id: 2, name: "Matheus", age: 31, profession: "Teacher" },
+    { id: 3, name: "Julia", age: 17, profession: "Student" },
+  ]
 
   // Função para passar no props
   function showMessage() {
@@ -98,6 +107,17 @@ function App() {
       {/* State lift, quando um valor é elevado do componente filho para o componente pai */}
       <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+
+      {/* Exercício */}
+      <h2>Exercício de fixação</h2>
+      {users.map(user => (
+        <UserDetails
+          key={user.id}
+          name={user.name}
+          age={user.age}
+          profession={user.profession}
+        />
+      ))}
     </div>
   );
 }
