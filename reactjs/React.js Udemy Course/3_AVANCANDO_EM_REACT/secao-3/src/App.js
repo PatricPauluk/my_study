@@ -12,6 +12,8 @@ import ShowUserName from './components/ShowUserName';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
 
 
 function App() {
@@ -31,6 +33,13 @@ function App() {
   function showMessage() {
     alert("Oi, sou uma função no props!")
   }
+
+  // Hook de useState para usar em State lift
+  const [message, setMessage] = useState("");
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
+
 
   return (
     <div className="App">
@@ -85,6 +94,10 @@ function App() {
 
       {/* Funções no props */}
       <ExecuteFunction myFunction={showMessage} />
+
+      {/* State lift, quando um valor é elevado do componente filho para o componente pai */}
+      <Message msg={message} />
+      <ChangeMessageState handleMessage={handleMessage} />
     </div>
   );
 }
