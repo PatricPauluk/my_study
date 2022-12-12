@@ -1,2 +1,2 @@
-# my_study
-All my studies are here. Feel free to look everything. :)
+# reactjs_study
+React.js academic personal content.
