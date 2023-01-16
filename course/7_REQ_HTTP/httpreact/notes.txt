@@ -1,0 +1,12 @@
+• Instalado json server:
+npm install json-server
+
+• Criado um pequeno banco de dados em data/db.json
+
+• Configurar um script em package.json, monitorando db.json em um endpoint especifico:
+"server": "json-server --watch data/db.json"
+
+• Para executar o server:
+npm run server
+
+• Quando o server executa na porta 3000, ao executar um app react ele pergunta se você quer executar em outra porta.
