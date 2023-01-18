@@ -25,11 +25,12 @@ function App() {
     fetchData()
   }, []);
 
-  console.log(products);
+  console.log(products)
 
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
+      <button onClick={() => console.log(products)}>Ver</button>
     </div>
   );
 }
