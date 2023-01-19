@@ -4,7 +4,7 @@ npm install json-server
 • Criado um pequeno banco de dados em data/db.json
 
 • Configurar um script em package.json, monitorando db.json em um endpoint especifico:
-"server": "json-server --watch data/db.json"
+"server": "npx json-server --watch data/db.json"
 
 • Para executar o server:
 npm run server

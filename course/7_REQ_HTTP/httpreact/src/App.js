@@ -29,13 +29,45 @@ function App() {
 
   // inserindo dados no banco
   const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const product = {
+      name,
+      price
+    }
+
+    // realiza a conexão para inserir dados
+    const res = await fetch(url, {
+      method: "POST", // método
+      headers: { // cabeçalho
+        "Content-Type": "application/json" // define que o tipo de conteúdo enviado esta em JSON
+      },
+      body: JSON.stringify(product), // converte os dados JSON para String no body para ser trafegado no backend
+    })
 
   }
 
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
-      <button onClick={() => console.log(products)}>Ver</button>
+      <ul>
+        {products.map(p => (
+          <li>{p.name} R${p.price}</li>
+        ))}
+      </ul>
+      <div className="App">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Nome:
+            <input type="text" value={name} name="name" onChange={(e) => setName(e.target.value)} />
+          </label>
+          <label>
+            Preco:
+            <input type="number" value={price} name="price" onChange={(e) => setPrice(e.target.value)} />
+          </label>
+          <input type="submit" value="Criar" />
+        </form>
+      </div>
     </div>
   );
 }
