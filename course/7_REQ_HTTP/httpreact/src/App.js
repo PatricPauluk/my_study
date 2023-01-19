@@ -6,11 +6,13 @@ import { useState, useEffect } from "react";
 const url = "http://localhost:3000/products";
 
 function App() {
+
   const [ products, setProducts ] = useState([]);
 
-  // resgatando dados do banco
-  
+  const [ name, setName ] = useState("");
+  const [ price, setPrice ] = useState("");
 
+  // resgatando dados do bancp
   useEffect(() => {
     async function fetchData() {
       // fetch é uma alternativa nativa para conexão (como o Axios)
@@ -25,7 +27,10 @@ function App() {
     fetchData()
   }, []);
 
-  console.log(products)
+  // inserindo dados no banco
+  const handleSubmit = async (e) => {
+
+  }
 
   return (
     <div className="App">
