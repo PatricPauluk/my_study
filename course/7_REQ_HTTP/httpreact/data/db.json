@@ -24,6 +24,21 @@
       "name": "Bota de couro",
       "price": "100",
       "id": 5
+    },
+    {
+      "name": "Geleia",
+      "price": "2",
+      "id": 6
+    },
+    {
+      "name": "Sapato",
+      "price": "30",
+      "id": 7
+    },
+    {
+      "name": "Calça azul",
+      "price": "25",
+      "id": 8
     }
   ]
 }

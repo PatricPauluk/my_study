@@ -32,8 +32,8 @@ function App() {
     e.preventDefault();
 
     const product = {
-      name,
-      price
+      name, // recebe o name do submit (como é o mesmo nome não precisa colocar name: name)
+      price // o mesmo vale para price
     }
 
     // realiza a conexão para inserir dados
@@ -45,6 +45,10 @@ function App() {
       body: JSON.stringify(product), // converte os dados JSON para String no body para ser trafegado no backend
     })
 
+    // adiciona o produto e carrega os dados de forma dinâmica
+    const addedProduct = await res.json();
+    setProducts(prevP => [...prevP, addedProduct]);
+
   }
 
   return (
@@ -52,7 +56,7 @@ function App() {
       <h1>Lista de Produtos</h1>
       <ul>
         {products.map(p => (
-          <li>{p.name} R${p.price}</li>
+          <li key={p.id}>{p.name} R${p.price}</li>
         ))}
       </ul>
       <div className="App">
