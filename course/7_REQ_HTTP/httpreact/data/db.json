@@ -39,6 +39,21 @@
       "name": "Calça azul",
       "price": "25",
       "id": 8
+    },
+    {
+      "name": "Moletom",
+      "price": "12",
+      "id": 9
+    },
+    {
+      "name": "Moletom",
+      "price": "12",
+      "id": 10
+    },
+    {
+      "name": "Moletom",
+      "price": "12",
+      "id": 11
     }
   ]
 }

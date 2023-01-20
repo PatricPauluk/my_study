@@ -1,11 +1,15 @@
 import './App.css';
 
 import { useState, useEffect } from "react";
+import { useFetch } from './hooks/useFetch';
 
 // url da API
 const url = "http://localhost:3000/products";
 
 function App() {
+
+  // custom hook (renomeia data para itens)
+  const { data: items } = useFetch(url);
 
   const [ products, setProducts ] = useState([]);
 
@@ -13,19 +17,19 @@ function App() {
   const [ price, setPrice ] = useState("");
 
   // resgatando dados do bancp
-  useEffect(() => {
-    async function fetchData() {
-      // fetch é uma alternativa nativa para conexão (como o Axios)
-      const res = await fetch(url);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     // fetch é uma alternativa nativa para conexão (como o Axios)
+  //     const res = await fetch(url);
   
-      // converte dados de json para objeto para ser utilizado
-      const data = await res.json();
+  //     // converte dados de json para objeto para ser utilizado
+  //     const data = await res.json();
   
-      setProducts(data);
-    }
+  //     setProducts(data);
+  //   }
 
-    fetchData()
-  }, []);
+  //   fetchData()
+  // }, []);
 
   // inserindo dados no banco
   const handleSubmit = async (e) => {
@@ -55,7 +59,8 @@ function App() {
     <div className="App">
       <h1>Lista de Produtos</h1>
       <ul>
-        {products.map(p => (
+        
+        {items && items.map(p => ( // se itens for true exibe (se for true o array não é null)
           <li key={p.id}>{p.name} R${p.price}</li>
         ))}
       </ul>

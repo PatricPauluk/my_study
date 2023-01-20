@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-// custom hook
+// resgatando dados do banco
 export const useFetch = url => {
   const [ data, setData ] = useState(null);
 
